@@ -8,11 +8,11 @@ btnShow.addEventListener("click", () => {
     fetch(`https://api.imgflip.com/get_memes`)
       .then((res) => res.json())
       .then((data) => {
-        let meme = data.data.memes[show];
+        let { name, url } = data.data.memes[show];
         myMeme.innerHTML = `
-        <h2 class="text-danger">${meme.name}</h2>
+        <h2 class="text-danger">${name}</h2>
     <div class="mx-auto border rounded p-3 text-center "  style="max-width: 400px; max-height: 450px; " >
-    <img src="${meme.url}"class="img-fluid" style="max-height:300px; object-fit:contain;" >
+    <img src="${url}"class="img-fluid" style="max-height:300px; object-fit:contain;" >
     </div>
     `;
    
