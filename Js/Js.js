@@ -1,6 +1,6 @@
-let input = document.querySelector("input");
-let btnShow = document.querySelector("button");
-let myMeme = document.querySelector(".mymeme");
+const input = document.querySelector("input");
+const btnShow = document.querySelector("button");
+const myMeme = document.querySelector(".mymeme");
 
 btnShow.addEventListener("click", () => {
   let show = input.value;
