@@ -17,6 +17,9 @@ btnShow.addEventListener("click", () => {
     `;
    
 
+      })
+    .catch((e) => {
+        myMeme.innerHTML =  `<h2 class="text-danger">The server is Down</h2>`;
       });
        else{
         myMeme.innerHTML=`<h2 class="text-danger">Please Enter Valid Number</h2>`
